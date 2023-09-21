@@ -27,7 +27,7 @@ echo
 echo "You can run the following command from project root"
 echo
 echo -e "\t$ pnpm --filter \"$FULL_NAME\" install # install dependency"
-echo -e "\t$ pnpm --filter \"$COMMAND_NAME-*\" run build # run build script for all node in same commands"
+echo -e "\t$ pnpm --filter \"$COMMAND_NAME-*\" run build-minify-outerbase # run build script for all nodes"
 echo 
 echo "Happy building!"
 echo 

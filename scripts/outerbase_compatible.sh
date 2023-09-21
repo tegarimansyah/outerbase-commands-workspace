@@ -11,4 +11,4 @@ fi
 FULL_NAME=$1
 
 echo "Running outerbase-compatible.sh"
-sed -i 's/`{{\([^}]*\)}}`/{{\1}}/g' $1
+sed 's/"{{\([^}]*\)}}"/{{\1}}/g' $1 > $1.outerbase

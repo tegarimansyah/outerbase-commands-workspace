@@ -5,6 +5,6 @@ export function userCode() {
     return {
       status: "success",
       message: `hello ${world()}`,
-      msg: `{{request.query.INPUT_NAME}}`
+      msg: "{{request.query.INPUT_NAME}}"
     };
   }

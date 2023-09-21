@@ -5,7 +5,7 @@
   "scripts": {
     "new": "bash scripts/new_command.sh",
     "minify": "set -e; run(){ pnpx terser -c drop_console=true  -m toplevel=true -m reserved=['userCode'] --module dist/$1.js > dist/$1.min.js; }; run",
-    "convert-to-outerbase": "set -e; run(){ ./scripts/outerbase_compatible.sh dist/$1; }; run"
+    "convert-to-outerbase": "set -e; run(){ sh ./scripts/outerbase_compatible.sh dist/$1; }; run"
   },
   "keywords": [],
   "author": "Tegar Imansyah",
