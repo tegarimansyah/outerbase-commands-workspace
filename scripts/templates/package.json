@@ -1,0 +1,15 @@
+{
+  "name": "package_name",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "build-outerbase": "vite build && sh ../../scripts/outerbase_compatible.sh ../../dist/package_name.js"
+  },
+  "devDependencies": {
+    "path": "^0.12.7",
+    "terser": "^5.20.0",
+    "vite": "^4.4.5"
+  }
+}
