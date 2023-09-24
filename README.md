@@ -12,6 +12,7 @@ This is a [pnpm workspace](https://pnpm.io/workspaces). For create a new node, r
 
 ```bash
 pnpm run new COMMAND_NAME NODE_NAME
+pnpm --filter "COMMAND_NAME-NODE_NAME" install
 ```
 
 `NODE_NAME` is optional. If empty, then it will create `node-1`. 
